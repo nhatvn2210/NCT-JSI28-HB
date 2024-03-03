@@ -5,6 +5,9 @@ const newArr = myArr.map(function (number){
 console.log(newArr);
 async function callAPI() {
     let postListData = await fetch('https://jsonplaceholder.typicode.com/photos');
-    console.log(postListData);
+    
+    let postData = await response.json();
+
+    console.log(postData);
 }
 callAPI();
